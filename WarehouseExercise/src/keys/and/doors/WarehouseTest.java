@@ -1,6 +1,6 @@
 package keys.and.doors;
 
-public class Test {
+public class WarehouseTest {
 
 	public static void main(String[] args) {
 		Warehouse warehouse = new Warehouse(100, 0.9); // 100 and 0.9 are the amount of doors and the ratio of keyed

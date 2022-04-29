@@ -6,7 +6,9 @@ public class Product {
 	private String name;
 	private double price;
 	private String description;
-	private int quantity;
+	private double quantity;
+	final double salesTax = 0.0775;
+	
 
 //	default constructor
 	public Product() {
@@ -22,15 +24,15 @@ public class Product {
 	}
 
 //	methods
-	public double calculateProductTotal() {
+	public double calculateProductTotal(double quantity, double price) {
 		return calculateSubtotal(quantity, price) + calculateSalesTax(quantity, price);
 	}
 
-	public double calculateSalesTax(int quantity, double price) {
-		return (quantity * price) * 0.0775;
+	public double calculateSalesTax(double quantity, double price) {
+		return calculateSubtotal(quantity, price) * salesTax;
 	}
 
-	public double calculateSubtotal(int quality, double price) {
+	public double calculateSubtotal(double quantity, double price) {
 		return quantity * price;
 	}
 
@@ -59,7 +61,7 @@ public class Product {
 		this.description = description;
 	}
 
-	public int getQuantity() {
+	public double getQuantity() {
 		return quantity;
 	}
 
