@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+//import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -19,8 +19,8 @@ public class Teacher implements Serializable {
 	private String salary;
 	private String teacherName;
 
-	@ManyToOne
-	private Department department;
+//	@ManyToOne
+//	private Department department;
 
 	public Teacher(int teacher_id, String salary, String teacherName) {
 		super();
@@ -32,13 +32,13 @@ public class Teacher implements Serializable {
 	public Teacher() {
 	}
 
-	public Department getDepartment() {
-		return department;
-	}
-
-	public void setDepartment(Department department) {
-		this.department = department;
-	}
+//	public Department getDepartment() {
+//		return department;
+//	}
+//
+//	public void setDepartment(Department department) {
+//		this.department = department;
+//	}
 
 	public int getTeacher_id() {
 		return teacher_id;
