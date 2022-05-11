@@ -1,0 +1,88 @@
+.main_container {
+  background-color: black;
+  display: inline-block;
+  width: 1520px;
+
+}
+.session1 {
+    display: flex;
+    width: 1520px;
+}
+.header1 {
+    display: flex;
+}
+.header2 {
+    display: flex;
+    position: absolute;
+    right: 10px;
+}
+.header3 {
+    position: absolute;
+    bottom: 75px;
+}
+
+.me {
+  width: 300px;
+  height: 300px;
+}
+.name {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: aliceblue;
+  display: block;
+}
+.title {
+  color: paleturquoise;
+  display: inline-flex;
+  display: block;
+}
+.alias {
+  color: white;
+  font-size: large;
+}
+.iron {
+    color: grey;
+    font-size: large;
+}
+.dob {
+  color: white;
+  font-size: large;
+}
+.birth {
+    color: grey;
+    font-size: large;
+}
+.addy {
+  color: white;
+  font-size: large;
+}
+.home {
+    color: grey;
+    font-size: large;
+}
+.numbuh {
+  color: white;
+  font-size: large;
+}
+.numero {
+    color: grey;
+    font-size: large;
+}
+.email {
+  color: white;
+  font-size: large;
+}
+.mail {
+    color: grey;
+    font-size: large;
+}
+.website {
+  color: white;
+  font-size: large;
+}
+.lds {
+    color: grey;
+    font-size: large;
+}
+.bio {
+    color: grey;
+}
