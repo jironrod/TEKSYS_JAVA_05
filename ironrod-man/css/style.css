@@ -1,0 +1,76 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+#container {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+#ironrod {
+  height: 50px;
+  width: 50px;
+  margin-top: -30px;
+  background-image: url(../assets/adventurer.gif);
+  background-size: cover;
+  position: absolute;
+  /* border: 1px solid red; */
+}
+
+#score {
+  border: 2px solid gainsboro;
+  font-variant-numeric:ordinal;
+  width: 125px;
+  height: 80px;
+  left: 1375px;
+  bottom: 560px;
+  padding-top: 30px;
+  color: white;
+  position: absolute;
+  text-align: center;
+}
+
+div.brick {
+  background-image: url("../assets/ironRod.png");
+  background-size: cover;
+}
+
+div.brick2 {
+  background-image: url("../assets/ironRod.png");
+  background-size: cover;
+  transform: rotate(90deg);
+}
+
+
+.coin {
+  background-image: url(../assets/moroni.png);
+  background-size: cover;
+  animation: spin 1.5s ease-in-out infinite;
+}
+
+.sentinel {
+  background-image: url(../assets/sentinel.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.evil {
+  background-image: url(../assets/evil.webp);
+  background-size: contain;
+}
+
+.font {
+  font-family: 'Princess Sofia', cursive;
+}
+
